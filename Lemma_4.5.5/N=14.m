@@ -34,6 +34,9 @@ pts := PointSearch(CQ, 1000);
 E, mE := EllipticCurve(CC, c(pts[1]));
 "That quotient is E:", E;
 "";
+"Cremona reference of E:";
+CremonaReference(E);
+"";
 
 rk, tr := Rank(E);
 assert tr;
